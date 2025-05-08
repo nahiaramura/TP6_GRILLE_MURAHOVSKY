@@ -1,33 +1,33 @@
 import React from 'react';
 import { ScrollView, View, StyleSheet } from 'react-native';
-import Vista from '../componentes/View';
-import Texto from '../componentes/Texto';
-import Imagen from '../componentes/Imagen';
-import MiTextInput from '../componentes/TextInput';
-import MiBoton from '../componentes/Button';
-import MiScrollView from '../componentes/ScrollView';
-import MiFlatList from '../componentes/FlatList';
+import ViewEjemplo from '../componentes/ViewEjemplo';
+import TextEjemplo from '../componentes/TextEjemplo';
+import ImageEjemplo from '../componentes/ImageEjemplo';
+import TextInputEjemplo from '../componentes/TextInputEjemplo';
+import ButtonEjemplo from '../componentes/ButtonEjemplo';
+import ScrollViewEjemplo from '../componentes/ScrollViewEjemplo';
+import FlatListEjemplo from '../componentes/FlatListEjemplo';
 //npx expo start --tunnel
 
 export default function App() {
-  return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Vista />
-      <Texto />
-      <Imagen />
-      <MiTextInput />
-      <MiBoton />
-      <MiScrollView />
-      <MiFlatList />
-    </ScrollView>
-  );
+return (
+<ScrollView contentContainerStyle={styles.container}>
+<ViewEjemplo />
+<TextEjemplo />
+<ImageEjemplo />
+<TextInputEjemplo />
+<ButtonEjemplo />
+<ScrollViewEjemplo />
+<FlatListEjemplo />
+</ScrollView>
+);
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
+container: {
+flexGrow: 1,
+justifyContent: 'center',
+alignItems: 'center',
+padding: 20,
+},
 });
